@@ -33,7 +33,10 @@ const app = express();
 // cors allow the server to accept request from different origin
 app.use(
     cors({
-        origin: ['http://localhost:5173', 'https://www.bookstore.com'],
+        origin: [
+            'http://localhost:5173',
+            'https://bookstore-mern-of93.onrender.com'
+        ],
         credentials: true
     })
 );
@@ -66,5 +69,5 @@ app.use((err, req, res, next) => {
 
 // listen to port
 app.listen(PORT, () => {
-    console.log(`server is up and running on port :  http://localhost:${PORT}`);
+    console.log(`server is up and running on port :  ${PORT}`);
 });
