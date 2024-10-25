@@ -12,7 +12,7 @@ node_modules/
 .DS_Store
 
 # Logs
-logs/
+# logs/
 *.log
 
 # Runtime data
@@ -21,8 +21,8 @@ pids/
 *.pid.lock
 
 # Build output
-build/
-dist/
+# build/
+# dist/
 
 # dotenv environment variables file
 .env.local
