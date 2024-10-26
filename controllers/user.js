@@ -72,8 +72,7 @@ const userControllers = {
 
                     // create cookie
                     res.cookie('token', token, { httpOnly: true });
-                    res.cookie('user', userExist.email);
-
+                    res.cookie('email', userExist.email);
                     res.status(200).json(userExist);
                 } else {
                     return res
