@@ -86,7 +86,7 @@ const userControllers = {
     },
     logout: (req, res) => {
         res.clearCookie('token');
-        res.clearCookie('user');
+        res.clearCookie('email');
         res.status(200).json({ msg: 'Logout successful' });
     }
 };
